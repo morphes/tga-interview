@@ -1,0 +1,6 @@
+<script>
+        $j('.pages a').on('click', function (el) {
+            $j( document ).trigger('gomage_customdashboard_campaign_list_pager',
+                    [ $j(el.target).attr('href') ]);
+        });
+    </script>
